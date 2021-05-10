@@ -1,0 +1,32 @@
+{
+    "name": "ky/fcm",
+    "description": "Package for send notification by firebase cloud message",
+    "type": "library",
+    "require": {
+        "illuminate/support": "^5.7"
+    },
+    "authors": [
+        {
+            "name": "Ky Le",
+            "email": "lenguyenky1801@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ky\\FCM\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ky\\FCM\\FCMServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "require-dev": {
+    }
+}

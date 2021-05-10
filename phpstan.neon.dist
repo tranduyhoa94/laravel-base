@@ -1,0 +1,36 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+parameters:
+    level: 5
+    paths:
+        - app
+        - bootstrap/app.php
+        - config
+        - resources/lang
+        - routes
+        - tests
+        - packages/core/src
+    ignoreErrors:
+        - '#Call to an undefined method Illuminate\\Database\\Query\\Builder|Illuminate\\Database\\Eloquent\\Builder|Illuminate\\Database\\Eloquent\\Model::commonTable\(\)#'
+        - '#Call to an undefined method App\\Providers\\AppServiceProvider::(applyScopes|runSelectWithCTE|compileCTE|toSql|getBindings|createSub|selectRaw)#'
+        - '#Call to an undefined method \$this\(App\\Providers\\AppServiceProvider\)::compileCTE#'
+        - '#Access to an undefined property App\\Providers\\AppServiceProvider::(\$query|\$model|\$columns|\$processor|\$bindings|\$connection|\$useWritePdo|\$grammar)#'
+        - '#Access to an undefined property ipinfo\\ipinfo\\Details::\$country#'
+        - '#Access to an undefined property Twilio\\Rest\\Client::\$messages#'
+        - '#Call to an undefined method Twilio\\Twiml::say\(\)#'
+        - '#Access to an undefined property Twilio\\Rest\\Api\\V2010\\Account\\AvailablePhoneNumberCountryContext::\$local.#'
+        - '#Access to an undefined property Twilio\\Rest\\Client::\$incomingPhoneNumbers.#'
+        - '#Access to an undefined property Mi\\Paginator\\PaginatorServiceProvider::\$model#'
+        - '#Call to an undefined method Mi\\Paginator\\PaginatorServiceProvider::where#'
+        - '#Call to an undefined method Mi\\Paginator\\PaginatorServiceProvider::take#'
+        - '#Call to an undefined method Mi\\Paginator\\PaginatorServiceProvider::get#'
+        - '#Access to an undefined property Mi\\Paginator\\PaginatorServiceProvider::\$query#'
+        - '#Call to an undefined method Mi\\Paginator\\PaginatorServiceProvider::orderBy#'
+        - '#Call to an undefined method App\\Providers\\AppServiceProvider::copy#'
+        - '#Call to an undefined method [a-zA-Z0-9\\_]+::isHoliday#'
+        - '#Access to an undefined property App\\Providers\\AppServiceProvider::\$year#'
+        - '#expects Twilio\\TwiML\\Voice\\(url|phoneNumber), string given#'
+        - '#Call to an undefined static method Jenssegers\\Agent\\Facades\\Agent::isIos#'
+        - '#Call to an undefined static method Illuminate\\Support\\Facades\\Redis::rpush#'
+        - '#Call to an undefined method Illuminate\\Contracts\\Auth\\Guard::claims#'
+        - '#Call to an undefined method League\\Flysystem\\FilesystemInterface::getAdapter#'

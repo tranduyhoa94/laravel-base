@@ -1,0 +1,27 @@
+{
+    "name": "mi/l5-swagger",
+    "type": "library",
+    "authors": [
+        {
+            "name": "My Truong",
+            "email": "hoangmy92@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/console": "^5.8",
+        "illuminate/support": "^5.8",
+        "illuminate/routing": "^5.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mi\\L5Swagger\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mi\\L5Swagger\\SwaggerServiceProvider"
+            ]
+        }
+    }
+}
